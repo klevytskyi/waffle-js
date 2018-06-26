@@ -1,0 +1,46 @@
+$button-size: 50px;
+$icon-size: 30px;
+
+.button {
+  background: rgb(166, 123, 79);
+  border: none;
+  border-radius: $button-size / 2;
+  bottom: 10px;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.44);
+  color: white;
+  cursor: pointer;
+  display: block;
+  height: $button-size;
+  max-width: $button-size;
+  min-width: $button-size;
+  outline: none;
+  overflow: hidden;
+  padding: ($button-size - $icon-size) / 2;
+  position: fixed;
+  right: 10px;
+  transition: all 0.5s ease-in-out;
+  z-index: 100501;
+
+  &Content {
+    align-items: center;
+    display: flex;
+  }
+
+  &Text {
+    flex-shrink: 0;
+    font-size: 16px;
+    margin: auto;
+    margin-left: ($button-size - $icon-size) / 2;
+  }
+
+  &:hover {
+    max-width: 200px;
+  }
+
+  &Icon {
+    flex-shrink: 0;
+    height: $icon-size;
+    vertical-align: middle;
+    width: $icon-size;
+  }
+}

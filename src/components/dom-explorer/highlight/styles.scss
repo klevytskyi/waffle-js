@@ -1,0 +1,19 @@
+.highlight {
+  background: rgba(0, 140, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  position: absolute;
+  visibility: initial;
+  z-index: 100500;
+
+  &Waffle {
+    background: rgba(255, 51, 51, 0.77);
+    border-radius: 50%;
+    height: 20px;
+    margin: -10px;
+    position: absolute;
+    width: 20px;
+  }
+}
