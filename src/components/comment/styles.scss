@@ -1,0 +1,23 @@
+.comment {
+  $corner-size: 10px;
+
+  background: white;
+  // box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 0 30px #333);
+  margin-top: 15px;
+  padding: 10px;
+  position: absolute;
+
+  &::before {
+    border: $corner-size solid;
+    border-color: white transparent transparent transparent;
+    content: '';
+    display: block;
+    height: 0;
+    left: -$corner-size;
+    position: absolute;
+    top: -$corner-size;
+    transform: rotate(45deg);
+    width: 0;
+  }
+}

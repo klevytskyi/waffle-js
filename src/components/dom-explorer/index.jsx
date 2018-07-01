@@ -41,7 +41,7 @@ class DomExplorer extends React.Component {
 
   onHighlightClick = () => {
     console.log(finder(this.state.target), this.state.quater);
-    // this.props.onCreate();
+    this.props.onCreateComment(finder(this.state.target), this.state.quater);
   };
 
   setHightlightRef = node => {

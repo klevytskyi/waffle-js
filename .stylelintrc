@@ -9,7 +9,7 @@
   "rules": {
     "order/properties-alphabetical-order": true,
     "at-rule-no-unknown": [true, {
-      ignoreAtRules: ["extend", "include", "mixin", "for"],
+      ignoreAtRules: ["extend", "include", "mixin", "for", "return", "function"],
     }],
     "selector-pseudo-class-no-unknown": [true,
       ignorePseudoClasses: ["global"],
